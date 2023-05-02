@@ -8,7 +8,7 @@ let httpServer = require('http').createServer(app);  // create a server (using t
 app.get('/', function(req, res){
   res.send('<h1>Hello world</h1>');
 });
- 
+
 // make server listen for incoming messages
 httpServer.listen(portNumber, function(){
   console.log('listening on port:: '+portNumber);
@@ -23,3 +23,4 @@ app.use(express.static(__dirname + '/public'));
 app.get('/indexExample', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
+
