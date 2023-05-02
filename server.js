@@ -14,6 +14,7 @@ httpServer.listen(portNumber, function(){
   console.log('listening on port:: '+portNumber);
 })
 
+
 // serving static files
 let static = require('node-static'); // for serving static files (i.e. css,js,html...)
 // serve anything from this dir ...
