@@ -20,6 +20,6 @@ let static = require('node-static'); // for serving static files (i.e. css,js,ht
 app.use(express.static(__dirname + '/public'));
  
 //make a route to sentiment page...
-app.get('/clientSentiment', function(req, res) {
+app.get('/indexExample', function(req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
